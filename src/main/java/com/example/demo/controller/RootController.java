@@ -1,7 +1,8 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,8 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @version  $Revision$, $Date$
  */
 @EnableAutoConfiguration
+@RequestMapping("/hello")
 @RestController
-public class Example
+public class RootController
 {
 	//~ Methods ----------------------------------
 	/**
@@ -21,7 +23,7 @@ public class Example
 	 *
 	 * @return
 	 */
-	@RequestMapping("/")
+	@GetMapping
 	String home()
 	{
 		return "Hello World!";
