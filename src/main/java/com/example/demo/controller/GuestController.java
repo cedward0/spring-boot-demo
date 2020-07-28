@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.data.entity.Guest;
 import com.example.demo.data.repository.GuestRepository;
 
@@ -29,6 +30,7 @@ public class GuestController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public Iterable<Guest> getGuests()
 	{

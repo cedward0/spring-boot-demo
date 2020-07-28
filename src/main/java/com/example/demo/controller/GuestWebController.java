@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.business.service.ReservationService;
 import com.example.demo.data.entity.Guest;
 
@@ -43,6 +44,7 @@ public class GuestWebController
 	 * @param   model
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public String getGuests(Model model)
 	{

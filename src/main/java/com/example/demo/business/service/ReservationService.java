@@ -1,5 +1,6 @@
 package com.example.demo.business.service;
 
+import com.example.demo.aspect.Loggable;
 import com.example.demo.business.domain.RoomReservation;
 import com.example.demo.data.entity.Guest;
 import com.example.demo.data.entity.Reservation;
@@ -59,6 +60,7 @@ public class ReservationService
 	 * @param   date
 	 * @return
 	 */
+	@Loggable
 	public List<RoomReservation> getRoomReservationsForDate(Date date)
 	{
 		Iterable<Room> rooms = this.roomRepository.findAll();
@@ -106,6 +108,7 @@ public class ReservationService
 	 *
 	 * @return
 	 */
+	@Loggable
 	public Iterable<Guest> getHotelGuests()
 	{
 		return guestRepository.findAll();

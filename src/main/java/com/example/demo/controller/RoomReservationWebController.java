@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.business.domain.RoomReservation;
 import com.example.demo.business.service.ReservationService;
 import com.example.demo.util.DateUtils;
@@ -49,6 +50,7 @@ public class RoomReservationWebController
 	 * @param   model
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public String getReservations(@RequestParam(
 			value = "date",

@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.data.entity.Room;
 import com.example.demo.data.repository.RoomRepository;
 
@@ -29,6 +30,7 @@ public class RoomController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public Iterable<Room> getRooms()
 	{

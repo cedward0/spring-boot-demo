@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.data.entity.Reservation;
 import com.example.demo.data.repository.ReservationRepository;
 
@@ -29,6 +30,7 @@ public class ReservationController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public Iterable<Reservation> getReservations()
 	{

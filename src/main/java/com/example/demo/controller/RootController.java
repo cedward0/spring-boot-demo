@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
+
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +25,9 @@ public class RootController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping
-	String home()
+	public String home()
 	{
 		return "Hello World!";
 	}

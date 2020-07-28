@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.contact.Contact;
 import com.example.demo.contact.ContactBuilder;
 import com.example.demo.repository.PresidentEntity;
@@ -38,6 +39,7 @@ public class PresidentController
 	 * @param   id
 	 * @return
 	 */
+	@Countable
 	@GetMapping("{id}")
 	public PresidentEntity getPresById(@PathVariable
 		Long id)
@@ -51,6 +53,7 @@ public class PresidentController
 	 * @param   id
 	 * @return
 	 */
+	@Countable
 	@GetMapping("contact/{id}")
 	public Contact getPresContById(@PathVariable
 		Long id)

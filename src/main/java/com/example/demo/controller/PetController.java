@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.pet.Pet;
 import com.example.demo.pet.PetFactory;
 
@@ -33,6 +34,7 @@ public class PetController extends PresidentController
 	 * @param   name
 	 * @return
 	 */
+	@Countable
 	@PostMapping("adoptPet/{type}/{name}")
 	public Pet adoptPet(@PathVariable
 		String type, @PathVariable
@@ -50,6 +52,7 @@ public class PetController extends PresidentController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping
 	public String getDefault()
 	{

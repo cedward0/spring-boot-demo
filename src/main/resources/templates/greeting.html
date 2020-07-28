@@ -5,6 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<!--/*@thymesVar id="greeting" type="java.lang.String"*/-->
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<!--/*@thymesVar id="is24" type="java.lang.Boolean"*/-->
+<p th:text=" ${greeting} + ', ' + ${name} + '! ' + ${is24}" />
 </body>
 </html>

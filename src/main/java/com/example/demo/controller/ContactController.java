@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.aspect.Countable;
 import com.example.demo.contact.Contact;
 import com.example.demo.contact.ContactBuilder;
 
@@ -26,6 +27,7 @@ public class ContactController
 	 *
 	 * @return
 	 */
+	@Countable
 	@GetMapping("presidents")
 	public List<Contact> getPresidents()
 	{
