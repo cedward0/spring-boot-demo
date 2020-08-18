@@ -17,9 +17,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-        <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.71</appengine.target.version>
-        <appengine-maven-plugin-version>1.3.2</appengine-maven-plugin-version>
 	</properties>
 
 	<dependencies>
@@ -82,24 +79,7 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.30</version>
         </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>${appengine.target.version}</version>
-        </dependency>
         
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-testing</artifactId>
-            <version>${appengine.target.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>${appengine.target.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -116,7 +96,7 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
-                <version>${appengine-maven-plugin-version}</version>
+                <version>1.3.2</version>
             </plugin>
 		</plugins>
 	</build>
