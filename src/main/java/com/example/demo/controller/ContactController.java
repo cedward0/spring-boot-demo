@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.aspect.Countable;
-import com.example.demo.contact.Contact;
-import com.example.demo.contact.ContactBuilder;
+import com.example.demo.data.entity.Contact;
+import com.example.demo.business.util.ContactBuilder;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

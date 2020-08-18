@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.aspect.Countable;
-import com.example.demo.pet.Pet;
-import com.example.demo.pet.PetFactory;
+import com.example.demo.data.entity.pet.Pet;
+import com.example.demo.data.entity.pet.PetFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

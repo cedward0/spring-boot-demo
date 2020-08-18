@@ -3,7 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.aspect.Countable;
 import com.example.demo.business.domain.RoomReservation;
 import com.example.demo.business.service.ReservationService;
-import com.example.demo.util.DateUtils;
+import com.example.demo.business.util.DateUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

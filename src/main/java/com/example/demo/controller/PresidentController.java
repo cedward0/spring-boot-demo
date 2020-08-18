@@ -1,10 +1,10 @@
 package com.example.demo.controller;
 
 import com.example.demo.aspect.Countable;
-import com.example.demo.contact.Contact;
-import com.example.demo.contact.ContactBuilder;
-import com.example.demo.repository.PresidentEntity;
-import com.example.demo.repository.PresidentRepository;
+import com.example.demo.data.entity.Contact;
+import com.example.demo.business.util.ContactBuilder;
+import com.example.demo.data.repository.PresidentEntity;
+import com.example.demo.data.repository.PresidentRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

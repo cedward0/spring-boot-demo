@@ -1,7 +1,7 @@
 package com.example.demo;
 
-import com.example.demo.proto.PrototypeSpring;
-import com.example.demo.proto.SingletonSpring;
+import com.example.demo.business.proto.PrototypeSpring;
+import com.example.demo.business.proto.SingletonSpring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

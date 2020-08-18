@@ -1,9 +1,9 @@
 package com.example.demo;
 
-import com.example.demo.proto.PrototypeSpring;
-import com.example.demo.proto.SingletonSpring;
-import com.example.demo.repository.PresidentRepository;
-import com.example.demo.sing.SingletonJava;
+import com.example.demo.business.proto.PrototypeSpring;
+import com.example.demo.business.proto.SingletonSpring;
+import com.example.demo.data.repository.PresidentRepository;
+import com.example.demo.business.sing.SingletonJava;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -41,11 +41,11 @@ public class DesignPatternsApplicationTests
 
 	/**  */
 	@Autowired
-	com.example.demo.sing.SingletonSpring singletonSpring1;
+	com.example.demo.business.sing.SingletonSpring singletonSpring1;
 
 	/**  */
 	@Autowired
-	com.example.demo.sing.SingletonSpring singletonSpring2;
+	com.example.demo.business.sing.SingletonSpring singletonSpring2;
 
 	/**  */
 	@Autowired
